@@ -1,10 +1,10 @@
-# ssh-tunneling
+# ssh.bash
 
 ssh隧道,让运维提升效率
 
 ```
 SYNOPSIS :
-    tunnel.bash
+    ssh.bash
         --help
         --configure
         --local-port    <LOCAL_PORT>
@@ -30,14 +30,13 @@ DESCRIPTION :
     --identity-file      Path to private key (*.ppk, *.pem) to access remote server (optional)
 
 EXAMPLES :
-    ./tunnel.bash --help
+    ./ssh.bash --help
 
-    ./tunnel.bash --configure --remote-user 'root' --remote-host 'my-server.com'
-    ./tunnel.bash --configure --remote-user 'root' --remote-host 'my-server.com' --identity-file '/keys/my-server/key.ppk'
+    ./ssh.bash --configure --remote-user 'root' --remote-host 'my-server.com'
+    ./ssh.bash --configure --remote-user 'root' --remote-host 'my-server.com' --identity-file '/keys/my-server/key.ppk'
 
-    ./tunnel.bash --local-port 8080 --remote-port 9090 --local-to-remote --remote-user 'root' --remote-host 'my-server.com'
-    ./tunnel.bash --local-port 8080 --remote-port 9090 --local-to-remote --remote-user 'root' --remote-host 'my-server.com' --identity-file '/keys/my-server/key.ppk'
+    ./ssh.bash --local-port 8080 --remote-port 9090 --local-to-remote --remote-user 'root' --remote-host 'my-server.com'
+    ./ssh.bash --local-port 8080 --remote-port 9090 --local-to-remote --remote-user 'root' --remote-host 'my-server.com' --identity-file '/keys/my-server/key.ppk'
 
-    ./tunnel.bash --local-port 8080 --remote-port 9090 --remote-to-local --remote-user 'root' --remote-host 'my-server.com'
-    ./tunnel.bash --local-port 8080 --remote-port 9090 --remote-to-local --remote-user 'root' --remote-host 'my-server.com' --identity-file '/keys/my-server/key.ppk'
-```
+    ./ssh.bash --local-port 8080 --remote-port 9090 --remote-to-local --remote-user 'root' --remote-host 'my-server.com'
+    ./ssh.bash --local-port 8080 --remote-port 9090 --remote-to-local --remote-user 'root' --remote-host 'my-server.com' --identity-file '/keys/my-server/key.ppk'
